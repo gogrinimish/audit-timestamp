@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Audit Timestamp",
+  "version": "1.0.2",
+  "description": "Add a local and UTC timestamp to pages for audit screenshots.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Audit Timestamp",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "64": "icons/icon-64.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "audit-timestamp@local.example",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  }
+}

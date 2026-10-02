@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Audit Timestamp</title>
+<style>
+body{width:280px;margin:0;padding:20px;font:14px system-ui;color:#182235;background:#f5f7fb}h1{font-size:18px;margin:0 0 6px}p{font-size:12px;line-height:1.5;color:#526078}label{display:block;margin:14px 0 6px}select,button{width:100%;padding:10px;border-radius:7px;border:1px solid #c9d1de;background:white;font:inherit}button{margin-top:9px;cursor:pointer}#show{background:#245bd6;color:white;border:0}#status{min-height:18px;margin-bottom:0}input{vertical-align:middle}
+</style>
+<h1>Audit Timestamp</h1><p>Local time + UTC, with seconds.</p>
+<label for="position">Position</label><select id="position"><option value="bottom-right">Bottom right</option><option value="bottom-left">Bottom left</option><option value="top-right">Top right</option><option value="top-left">Top left</option></select>
+<label><input id="freeze" type="checkbox"> Freeze time when shown</label>
+<button id="show">Show / update timestamp</button><button id="hide">Hide timestamp</button>
+<p id="status" role="status"></p><p>Uses your computer’s clock. Reloading the page removes the overlay.</p>
+<script src="popup.js"></script></html>
